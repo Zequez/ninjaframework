@@ -1,6 +1,6 @@
 <?php
 
-
+// La iba a usar, pero al final no.
 function vista($ruta = false) {
     global $params;
     $ruta = $ruta ? $ruta : $params->controlador;

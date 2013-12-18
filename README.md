@@ -12,4 +12,29 @@ Oh! I almost forgot, this project uses [Idiorm](https://github.com/j4mie/idiorm)
 Tutorial
 ========
 
-TODO.
+Cambiá las rutas en rutas.php
+
+Cambiá la configuración de MySQL en config.php
+
+Las rutas apuntan a la carpeta correspondienten en `/controladores`.
+
+Se renderiza la vista con el mismo nombre que el controlador, pero en `/vistas`.
+Si querés renderizar otra vista, devolvé el nombre de la vista en el return del controlador.
+
+Todas las variables que definas en el controlador, serán accesibles desde la vista.
+
+La vista se renderiza dentro de un layout. Por default es `/layouts/general.php`.
+
+Si querés usar otro layout, llamá a `layout('nombre_del_layout')` en el controlador.
+
+Para definir el lugar donde se renderiza la vista dentro del layout, simplemente hacer un `include $vista`
+
+Tenés acceso a la constante `ROOT` para leer el root del sistema.
+
+El "framework" ya viene con un ejemplo andando, así que modificá eso, es re boludo.
+
+Con respecto a los modelos, ponelos en `/modelos` y se cargan solos. Usá [Idiorm](https://github.com/j4mie/idiorm) y [Paris](https://github.com/j4mie/paris) o lo que se te cante.
+
+
+
+

@@ -33,17 +33,14 @@ require ROOT . 'system/lib/paris_class.php';
 require ROOT . 'system/lib/router_class.php';
 
 // Configuración del ORM para los modelos
-/*
-ORM::configure('mysql:host=localhost;dbname=example;names=utf8');
-ORM::configure('username', 'example');
-ORM::configure('password', 'example');
+ORM::configure('mysql:host='.$mysql_datos["host"].';dbname='.$mysql_datos["base"].';names=utf8');
+ORM::configure('username', $mysql_datos["usuarioBase"]);
+ORM::configure('password', $mysql_datos["claveBase"]);
 ORM::get_db()->query("SET NAMES 'utf8'");
-*/
 
-//require ROOT . '/modelos/welcome.php';
+// TODO: Autocargar modelos.
 
 session_start();
-
 
 // Esto ahora se hace desde /router.php, pero como antes
 // algunos archivos todavía cargan /ayudantes/general.php diréctamente

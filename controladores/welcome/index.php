@@ -4,6 +4,8 @@ $title = "Titulo";
 $texto = "Esto es el texto!";
 
 
-// return 'welcome/index' // Esto es el default
+// Esto es el comportamiento por default
+// layout('general');
+// return 'welcome/index'
 ?>
 
