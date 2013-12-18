@@ -1,8 +1,9 @@
 <?php
 
 $title = "Titulo";
-$hola = "hola";
+$texto = "Esto es el texto!";
 
 
+// return 'welcome/index' // Esto es el default
 ?>
 
