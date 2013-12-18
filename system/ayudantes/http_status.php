@@ -1,4 +1,5 @@
 <?php 
+// TODO: Hacer que funcionen con una vista.
 
 function error_404($texto = 'Página no encontrada') {
   header('Status: 404 Not Found');

@@ -3,16 +3,12 @@
 ini_set('display_errors', '1');
 
 // Definimos una constante con la raíz de la aplicación
-define('ROOT', dirname(__FILE__));
+define('ROOT', dirname(dirname(__FILE__)) . '/');
 
-include 'system/ayudantes/general.php';
+include ROOT . 'config.php';
+include ROOT . 'rutas.php';
 
-
-// Lista de rutas
-$rutas = Array(
-    'welcome' => 'welcome/index',
-    '' => 'welcome/index'
-);
+include ROOT . 'system/ayudantes/general.php';
 
 $router = new Router($rutas);
 

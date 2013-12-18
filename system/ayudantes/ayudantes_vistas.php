@@ -4,7 +4,7 @@
 function vista($ruta = false) {
     global $params;
     $ruta = $ruta ? $ruta : $params->controlador;
-    $ruta = ROOT . '/vistas/' . $ruta . '.php';
+    $ruta = ROOT . 'vistas/' . $ruta . '.php';
     return $ruta;
 }
 
@@ -30,11 +30,11 @@ function llamar_controlador($archivo_controlador, $params) {
     ob_start();
     
     try {
-        $vista = (include $archivo_controlador);
+        $vista = (include ROOT . $archivo_controlador);
         if ($vista !== false) {
             $vista = $vista != 1 ? $vista : $params->controlador;
             
-            $vista = ROOT . '/vistas/' . $vista . '.php';
+            $vista = ROOT . 'vistas/' . $vista . '.php';
             if (file_exists($vista)) {
                 include($vista);
             }
@@ -52,7 +52,7 @@ function llamar_controlador($archivo_controlador, $params) {
     $layout = layout();
     
     if ($vista && $layout) {
-        $layout_file = ROOT . '/vistas/layouts/' . layout() . '.php';
+        $layout_file = ROOT . 'vistas/layouts/' . layout() . '.php';
         if (file_exists($layout_file)) {
             include $layout_file;
         }

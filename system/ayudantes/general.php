@@ -13,25 +13,24 @@ if (!defined('TEMP_DIR')) {
     define('TEMP_DIR', ROOT . '/tmp');
 }
 
-require ROOT . '/system/ayudantes/http_status.php';
-require ROOT . '/system/ayudantes/asegurar_directorio.php';
-require ROOT . '/system/ayudantes/random_string.php';
-require ROOT . '/system/ayudantes/tiempo_transcurrido.php';
-require ROOT . '/system/ayudantes/fast_image_copy_resampled.php';
-require ROOT . '/system/ayudantes/rutas.php';
-require ROOT . '/system/ayudantes/ayudantes_vistas.php';
+require ROOT . 'system/ayudantes/http_status.php';
+require ROOT . 'system/ayudantes/asegurar_directorio.php';
+require ROOT . 'system/ayudantes/random_string.php';
+require ROOT . 'system/ayudantes/tiempo_transcurrido.php';
+require ROOT . 'system/ayudantes/rutas.php';
+require ROOT . 'system/ayudantes/ayudantes_vistas.php';
 
 
-require ROOT . '/system/lib/file_manager_class.php';
-require ROOT . '/system/lib/imagen_manager_class.php';
-require ROOT . '/system/lib/simple_image_class.php';
+require ROOT . 'system/lib/file_manager_class.php';
+require ROOT . 'system/lib/imagen_manager_class.php';
+require ROOT . 'system/lib/simple_image_class.php';
 
-require ROOT . '/system/lib/base.php';
+require ROOT . 'system/lib/base.php';
 
-require ROOT . '/system/lib/params_class.php';
-require ROOT . '/system/lib/idiorm_class.php';
-require ROOT . '/system/lib/paris_class.php';
-require ROOT . '/system/lib/router_class.php';
+require ROOT . 'system/lib/params_class.php';
+require ROOT . 'system/lib/idiorm_class.php';
+require ROOT . 'system/lib/paris_class.php';
+require ROOT . 'system/lib/router_class.php';
 
 // Configuración del ORM para los modelos
 /*

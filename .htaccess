@@ -3,4 +3,4 @@ Rewritebase /
 Options +FollowSymlinks
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule ^(.*)$ router.php?ruta=$1 [QSA]
+RewriteRule ^(.*)$ system/router.php?ruta=$1 [QSA]

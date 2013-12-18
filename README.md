@@ -8,3 +8,8 @@ Here we call things to be done "a lo ninja" when these are messy and with bad co
 It's also a tool for learning. And it's in spanish, I don't know why I'm writing this in english. But here everyone speaks spanish, and because is also a tool for learning I decided to do it in spanish.
 
 Oh! I almost forgot, this project uses [Idiorm](https://github.com/j4mie/idiorm) and [Paris](https://github.com/j4mie/paris) for ORMing, so all the credits for that to them.
+
+Tutorial
+========
+
+Change your routes in Router
